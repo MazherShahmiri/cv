@@ -7,7 +7,9 @@ Ready-to-launch static site. No frameworks, no build step, no hosting fees — p
 | File | Page |
 |---|---|
 | `index.html` | Home — hero, KPI strip, stack marquee, services, AI analytics, results, process, quotes, CTA |
-| `case-studies.html` | 4 anonymized case studies with animated charts + Klaviyo-style dashboards |
+| `case-studies.html` | Case studies index — 8 linked cards |
+| `case-studies/*.html` | 8 standalone case study pages (own URL + SEO meta each) |
+| `about.html` | About — founder (Mazz), principles, stack |
 | `book.html` | Booking page — Calendly slot, lead form, FAQ |
 
 ## Launch checklist (plug and play)
@@ -22,7 +24,9 @@ Everything to swap is marked with `★ SWAP` comments in the code. Search the pr
    paste it into the `access_key` hidden input in `book.html`. Submissions then arrive in your inbox.
    Until then the form politely points people to your email.
 4. **Email** — replace `hello@YOUR-DOMAIN.com` (footers + book page + `js/main.js`).
-5. **Social links** — footer `href="#"` placeholders in all three pages.
+5. **Social links** — footer `href="#"` placeholders on every page.
+6. **Founder photo** — drop your photo into `assets/` and swap the placeholder img in
+   `about.html` (marked `★ SWAP — PHOTO`).
 6. **Case study numbers** — currently realistic industry-benchmark placeholders.
    Swap in your real client data as you land accounts (all charts/dashboards are HTML/SVG — edit text, not images).
 
