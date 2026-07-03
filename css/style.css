@@ -644,7 +644,7 @@ ul, ol { list-style: none; }
   overflow: hidden;
   margin: 0;
 }
-.portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 .portrait img.placeholder {
   object-fit: contain;
   padding: 3.2rem;
