@@ -124,7 +124,7 @@
         // form not wired to an inbox yet — fall back to email so no lead is lost
         e.preventDefault();
         status.className = "form-status err";
-        status.textContent = "Form isn't connected yet — email us instead: hello@kairosretention.com";
+        status.textContent = "Form isn't connected yet — email us instead: info@kairosretention.com";
         return;
       }
       e.preventDefault();
@@ -142,7 +142,7 @@
         })
         .catch(function () {
           status.className = "form-status err";
-          status.textContent = "Something went wrong — email us at hello@kairosretention.com";
+          status.textContent = "Something went wrong — email us at info@kairosretention.com";
         });
     });
   }
