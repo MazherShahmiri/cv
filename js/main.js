@@ -1,4 +1,4 @@
-/* Kairos — interactions */
+/* Kairos: interactions */
 (function () {
   "use strict";
 
@@ -121,10 +121,10 @@
     form.addEventListener("submit", function (e) {
       var key = form.querySelector('[name="access_key"]').value;
       if (key === "YOUR-WEB3FORMS-KEY") {
-        // form not wired to an inbox yet — fall back to email so no lead is lost
+        // form not wired to an inbox yet, fall back to email so no lead is lost
         e.preventDefault();
         status.className = "form-status err";
-        status.textContent = "Form isn't connected yet — email us instead: info@kairosretention.com";
+        status.textContent = "Form isn't connected yet, email us instead: info@kairosretention.com";
         return;
       }
       e.preventDefault();
@@ -136,13 +136,13 @@
         .then(function (res) {
           if (res.success) {
             status.className = "form-status ok";
-            status.textContent = "Got it — we'll reply within one business day.";
+            status.textContent = "Got it, we'll reply within one business day.";
             form.reset();
           } else { throw new Error(); }
         })
         .catch(function () {
           status.className = "form-status err";
-          status.textContent = "Something went wrong — email us at info@kairosretention.com";
+          status.textContent = "Something went wrong, email us at info@kairosretention.com";
         });
     });
   }
